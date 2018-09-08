@@ -96,6 +96,10 @@ p {
   height: 50px;
 }
 
+.links a img:hover {
+  transform: scale(1.25, 1.25);
+}
+
 /* Animations */
 
 @-webkit-keyframes Gradient {
