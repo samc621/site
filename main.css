@@ -140,6 +140,9 @@ p {
   .CTA a {
     display: block;
   }
+  .links a {
+    padding: 0.5em;
+  }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
@@ -151,6 +154,9 @@ p {
   .CTA a {
     display: block;
   }
+  .links a {
+    padding: 0.5em;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -161,5 +167,8 @@ p {
   }
   .CTA a {
     display: block;
+  }
+  .links a {
+    padding: 0.5em;
   }
 }
