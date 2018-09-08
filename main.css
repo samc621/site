@@ -49,6 +49,48 @@ p {
   margin-top: 40px;
 }
 
+.CTA {
+  text-align: center;
+}
+
+.CTA a {
+  padding: 1em 2em;
+}
+
+.CTA a button {
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+  border-color: white;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 15px 32px;
+  font-family: sans-serif;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.CTA a button:hover {
+  transition: 0.3s;
+  background-color: white;
+  color: black;
+}
+
+.links {
+  text-align: center;
+}
+
+.links a {
+  padding: 1em;
+}
+
+.links a img {
+  height: 50px;
+}
+
 /* Animations */
 
 @-webkit-keyframes Gradient {
@@ -95,6 +137,9 @@ p {
     padding-right: 1.5em;
     padding-bottom: 1.5em;
   }
+  .CTA a {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
@@ -103,6 +148,9 @@ p {
     padding-right: 4em;
     padding-bottom: 4em;
   }
+  .CTA a {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -110,5 +158,8 @@ p {
     font-size: 4rem;
     padding-left: 0.3em;
     padding-right: 0.3em;
+  }
+  .CTA a {
+    display: block;
   }
 }
