@@ -39,6 +39,11 @@ p {
   font-size: 7.9rem;
   font-weight: 600;
   letter-spacing: 0;
+  overflow: hidden;
+  border-right: 0.15em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 .row2 {
@@ -129,6 +134,25 @@ p {
   }
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
 /* Responsive stuff */
 
 @media only screen and (max-width: 800px) {
@@ -164,6 +188,11 @@ p {
     font-size: 4rem;
     padding-left: 0.3em;
     padding-right: 0.3em;
+    animation: none;
+    border: none;
+    white-space: normal;
+    margin: none;
+    overflow: auto;
   }
   .CTA a {
     display: block;
